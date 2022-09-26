@@ -22,8 +22,9 @@ class MoneyTransferTest {
     }
 
     @Test
+    //Переводим с 0002 на 0001
     void transferMoneyToCard1FromCard2() {
-        int amount = 1000;
+        int amount = 8000;
 
         open("http://localhost:9999");
         var loginPage = new LoginPage();
@@ -54,6 +55,8 @@ class MoneyTransferTest {
     }
 
     @Test
+
+    //Переводим с 0001 на 0002
     void transferMoneyToCard2FromCard1() {
         int amount = 3000;
 
