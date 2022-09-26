@@ -55,7 +55,7 @@ class MoneyTransferTest {
 
     @Test
     void transferMoneyToCard2FromCard1() {
-        int amount = 5000;
+        int amount = 3000;
 
         open("http://localhost:9999");
         var loginPage = new LoginPage();
