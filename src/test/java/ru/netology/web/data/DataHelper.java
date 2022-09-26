@@ -16,6 +16,19 @@ public class DataHelper {
   }
 
   @Value
+  public static class CardInfo {
+    private String cardNumber;
+  }
+
+  public static CardInfo getCard1Number() {
+    return new CardInfo("5559 0000 0000 0001");
+  }
+
+  public static CardInfo getCard2Number() {
+    return new CardInfo("5559 0000 0000 0002");
+  }
+
+  @Value
   public static class VerificationCode {
     private String code;
   }
