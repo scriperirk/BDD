@@ -35,7 +35,7 @@ class MoneyTransferTest {
 
         var dashboardPage = new DashboardPage();
         // Запомнить текущий баланс
-        int currentBalance[] = {
+        int[] currentBalance = {
                 dashboardPage.getCardBalance(0),
                 dashboardPage.getCardBalance(1)
         };
@@ -69,7 +69,7 @@ class MoneyTransferTest {
 
         var dashboardPage = new DashboardPage();
         // Запомнить текущий баланс
-        int currentBalance[] = {
+        int[] currentBalance = {
                 dashboardPage.getCardBalance(0),
                 dashboardPage.getCardBalance(1)
         };
