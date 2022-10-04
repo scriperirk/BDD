@@ -18,15 +18,9 @@ public class TransferMoney {
         amount.shouldBe(Condition.visible);
     }
 
-    public void card1Balance(int amount) {
+    public void cardBalance(int amount, int cadr) {
         amountTransfer.sendKeys(String.valueOf(amount)); //Ввод суммы
-        from.sendKeys(String.valueOf(DataHelper.getCard2Number())); // Ввод номера карты
-        actionTransfer.click();
-    }
-
-    public void card2Balance(int amount) {
-        amountTransfer.sendKeys(String.valueOf(amount)); //Ввод суммы
-        from.sendKeys(String.valueOf(DataHelper.getCard1Number())); //Ввод номера карты
+        from.sendKeys(String.valueOf(DataHelper.getCardNumber(cadr))); //Ввод номера карты
         actionTransfer.click();
     }
 }

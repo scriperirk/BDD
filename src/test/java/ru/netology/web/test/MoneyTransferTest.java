@@ -42,7 +42,7 @@ class MoneyTransferTest {
         dashboardPage.card1Balance();
 
         var transferMoney = new TransferMoney();
-        transferMoney.card1Balance(amount);
+        transferMoney.cardBalance(amount,1);
 
         int expected1 = currentBalance[0] + amount;
         int expected2 = currentBalance[1] - amount;
@@ -77,7 +77,7 @@ class MoneyTransferTest {
         dashboardPage.card2Balance();
 
         var transferMoney = new TransferMoney();
-        transferMoney.card2Balance(amount);
+        transferMoney.cardBalance(amount,0);
 
         int expected1 = currentBalance[0] - amount;
         int expected2 = currentBalance[1] + amount;
